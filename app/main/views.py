@@ -1,12 +1,12 @@
 from flask import render_template,request,redirect,url_for
-from app import app
-from .request import get_articles
-from .request import get_source 
-from .request import search_source
+from . import main
+from app.request import get_articles
+from app.request import get_source 
+from app.request import search_source
 
 
 #views
-@app.route('/')
+@main.route('/')
 def index():
     top_news = get_source('sources')
     # print(top_news)
@@ -23,7 +23,7 @@ def index():
         return render_template('index.html', title = title, sources = top_news) 
     # description =describe_sources
 
-@app.route('/articles')
+@main.route('/articles')
 def display_articles():
     # general = get_articles('general')
 
@@ -35,7 +35,7 @@ def display_articles():
     
     return render_template('articles.html',  get_articles = top_articles )
 
-@app.route('/search/<source_name>')
+@main.route('/search/<source_name>')
 def search(source_name):
     '''
     function to display search results
