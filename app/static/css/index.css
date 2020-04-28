@@ -1,0 +1,39 @@
+h1 {
+    border: solid black 2px;
+    text-align: center;
+    font-size: 140px;
+    background-color: blueviolet;
+    font-family: 'Righteous', cursive;
+}
+.row {
+    border: solid black 2px;
+}
+h4 {
+    text-align: center;
+    color: black;
+    padding-top: 4%;
+}
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: black;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+.par {
+    text-align: center;
+    font-size: 40px;
+}
+.heading {
+    background-image: url(https://st4.depositphotos.com/5221209/22427/v/600/depositphotos_224278950-stock-video-television-world-news-background-animations.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    
+}  
+
