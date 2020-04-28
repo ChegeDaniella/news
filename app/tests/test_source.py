@@ -1,7 +1,7 @@
 import unittest
-from models import source
+from app.models import Source
 
-Source = source.Source
+# Source = source.Source
 
 class SourceTest(unittest.TestCase):
     '''
@@ -21,5 +21,5 @@ class SourceTest(unittest.TestCase):
         self.assertEqual(self.new_source.id,1234)  
         self.assertEqual(self.new_source.name,"newyork") 
 
-if __name__ == '__main__':
-    unittest.main()            
+# if __name__ == '__main__':
+#     unittest.main()            

@@ -1,7 +1,7 @@
 import unittest
-from models import articles
+from app.models import Articles
 
-Articles = articles.Articles
+# Articles = articles.Articles
 
 class ArticlesTest(unittest.TestCase):
 
@@ -19,6 +19,6 @@ class ArticlesTest(unittest.TestCase):
         self.assertEqual(self.new_articles.content,"Alot of things")
         self.assertEqual(self.new_articles.url,"http//bbc")
 
-if __name__ == '__main__':
-    unittest.main() 
+# if __name__ == '__main__':
+#     unittest.main() 
 
