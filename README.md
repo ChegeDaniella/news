@@ -27,4 +27,4 @@ https://newssources.herokuapp.com/
 ### License
 Copyright 2020 Daniella Wangechi Chege
 
-[License](Password-Locker/License)
+[License](News/License)
